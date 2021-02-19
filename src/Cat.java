@@ -31,15 +31,15 @@ public class Cat {
 		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
 		// Draw the eyes
 		g2.setColor(Color.black);
-		x = catX + EYE_X; 
-		y = catY + EYE_Y;
+		x = catX + MOUTH_X; 
+		y = catY + MOUTH_Y;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
 		x += EYE_SEPARATION;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
 		// Draw the mouth
 		g2.setColor(Color.red);
-		x = catX + MOUTH_X;
-		y = catY + MOUTH_Y;
+		x = catX + EYE_X;
+		y = catY + EYE_Y;
 		g2.fillOval(x, y, MOUTH_WIDTH, MOUTH_HEIGHT);
 		g2.setColor(Color.black);
 		// Meow text appears below cat head, +10 places below 
